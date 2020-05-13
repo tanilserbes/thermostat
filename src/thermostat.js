@@ -7,6 +7,4 @@ constructor() {
   getCurrentTemperature(){
     return this.temperature;
   }
-
-
 }
