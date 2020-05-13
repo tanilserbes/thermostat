@@ -7,6 +7,7 @@ constructor() {
   this.powerSavingMode = true;
   this.MAX_LIMIT_PSM_ON = 25;
   this.MAX_LIMIT_PSM_OFF = 32;
+  this.DEFAULT_TEMPERATURE = 20;
 }
 
 isMinimumTemperature() {
@@ -22,6 +23,7 @@ isMinimumTemperature() {
     }
   this.temperature++;
   }
+
   down(){
     if (this.isMinimumTemperature()) {
       return;
@@ -52,6 +54,9 @@ isMinimumTemperature() {
     return this.temperature === this.MAX_LIMIT_PSM_ON;
     
     }
+  }
+  resetTemperature(){
+    return this.temperature = this.DEFAULT_TEMPERATURE
   }
 
 }
