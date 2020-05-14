@@ -9,7 +9,6 @@ constructor() {
   this.MAX_LIMIT_PSM_OFF = 32;
   this.DEFAULT_TEMPERATURE = 20;
   this.MEDIUM_ENERGY_USAGE_LIMIT = 18;
-
 }
 
 isMinimumTemperature() {
